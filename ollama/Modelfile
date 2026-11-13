@@ -1,10 +1,10 @@
 FROM gemma4:31b
 # Parameters for focused, consistent analytical output
 
-# Reduced from 1 - TODO - review and test whether this is better, is this too harsh - 0.4 or 0.5 may be better?
+PARAMETER num_ctx 32768
+
 PARAMETER temperature 0.2 
 
-# Reduced from 64 - TODO - review and test whether this is better than 64 (original) - is this too harsh?
 PARAMETER top_k 40
 PARAMETER top_p 0.9
 PARAMETER repeat_penalty 1.1
